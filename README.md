@@ -3,9 +3,9 @@ Algorithm Study
 
 # 이번주 문제
 ---
-[완전 이진 트리](https://www.acmicpc.net/problem/9934)
-[최대 힙](https://www.acmicpc.net/problem/11279)
-[완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
+- [완전 이진 트리](https://www.acmicpc.net/problem/9934)
+- [최대 힙](https://www.acmicpc.net/problem/11279)
+- [완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
 
 ## 리뷰 작성 방식
 1. 코드관련 리뷰는 __Commits__ 에 작성합니다.
