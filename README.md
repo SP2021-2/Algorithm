@@ -7,6 +7,8 @@ Algorithm Study
 - [최대 힙](https://www.acmicpc.net/problem/11279)
 - [완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
 
+정렬 할당부분 준비
+
 ## 리뷰 작성 방식
 1. 코드관련 리뷰는 __Commits__ 에 작성합니다.
 2. 기타 리뷰는 __Conversation__ 에 작성합니다.
