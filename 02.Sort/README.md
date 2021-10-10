@@ -188,28 +188,47 @@ def quicksort(x):
 ```
 - __소스코드__ (cache 없이)
 ```
-def partition(arr, start, end):
-    pivot = arr[start]
-    left = start + 1
-    right = end
-    done = False
-    while not done:
-        while left <= right and arr[left] <= pivot:
-            left += 1
-        while left <= right and pivot <= arr[right]:
-            right -= 1
-        if right < left:
-            done = True
-        else:
-            arr[left], arr[right] = arr[right], arr[left]
-    arr[start], arr[right] = arr[right], arr[start]
-    return right
+# 2 8 7 1 3 5 6 4
 
+arr = list(map(int, input().split()))
 
-def quick_sort(arr, start, end):
-    if start < end:
-        pivot = partition(arr, start, end)
-        quick_sort(arr, start, pivot - 1)
-        quick_sort(arr, pivot + 1, end)
-    return arr
+def quicksort(A, lo, hi):
+    def partition(lo, hi):
+        pivot = A[hi]
+        left = lo
+        for right in range(lo, hi):
+            if A[right] < pivot:
+                A[left], A[right] = A[right], A[left]
+                left += 1
+            print(arr)
+        A[left], A[hi] = A[hi], A[left]
+        
+        return left
+    if lo < hi:
+        pivot = partition(lo, hi)
+        quicksort(A, lo, pivot-1)
+        quicksort(A, pivot+1, hi)
+    
+
+quicksort(arr, 0, len(arr)-1)
+print(arr)
+```
+
+```
+[2, 8, 7, 1, 3, 5, 6, 4]
+[2, 8, 7, 1, 3, 5, 6, 4]
+[2, 8, 7, 1, 3, 5, 6, 4]
+[2, 1, 7, 8, 3, 5, 6, 4]
+[2, 1, 3, 8, 7, 5, 6, 4]
+[2, 1, 3, 8, 7, 5, 6, 4]
+[2, 1, 3, 8, 7, 5, 6, 4]
+[2, 1, 3, 4, 7, 5, 6, 8]
+[2, 1, 3, 4, 7, 5, 6, 8]
+[2, 1, 3, 4, 7, 5, 6, 8]
+[1, 2, 3, 4, 7, 5, 6, 8]
+[1, 2, 3, 4, 7, 5, 6, 8]
+[1, 2, 3, 4, 7, 5, 6, 8]
+[1, 2, 3, 4, 7, 5, 6, 8]
+[1, 2, 3, 4, 5, 7, 6, 8]
+[1, 2, 3, 4, 5, 6, 7, 8]
 ```
