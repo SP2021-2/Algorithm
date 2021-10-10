@@ -14,6 +14,7 @@ Algorithm Study
 2. 기타 리뷰는 __Conversation__ 에 작성합니다.
 2. 모든 문제에 리뷰를 1줄 이상 작성합니다.
 
+[문제링크](https://github.com/tony9402/baekjoon)
 ## PR 방식
 1. git checkout main (메인 브랜치로 이동)
 2. git pull (깃헙 원격 저장소와 업데이트)
