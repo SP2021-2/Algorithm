@@ -27,7 +27,36 @@ def bubbleSort(arr):
   return arr
 ```
 ## 선택 정렬(Select Sort)
-- 손시연
+### 1. 선택 정렬 과정
+  1) 주어진 데어터 중, 최소값(min_idx)을 찾는다.
+  2) 최소값을 리스트 맨 앞의 위치한 값과 바꾼다.
+  3) 맨 앞의 위치를 뺀 나머지 데이터를 동일한 방법으로 반복한다.
+
+### 2. 선택정렬 예시
+  >> [9, 8, 1, 3, 2] 오름차순 정렬
+  1) [9, 8, 1, 3, 2]
+  2) [1, 8, 9, 3, 2]
+  3) [1, 2, 3, 9, 8]
+  4) [1, 2, 3, 8, 9]
+
+### 3. 선택정렬 코드
+def selection_sort(arr):
+    for i in range(len(arr) - 1):
+        min_idx = i
+        for j in range(i + 1, len(arr)):
+            if arr[j] < arr[min_idx]:
+                min_idx = j
+        arr[i], arr[min_idx] = arr[min_idx], arr[i]
+
+### 4. 알고리즘 분석
+- 공간 복잡도 : O(1)
+  -> 별도의 추가 공간 사용 X. 주어진 배열 공간 내에서 위치만 바꿈
+- 시간 복잡도 : O(N^2)
+  -> 이중 for문
+
+  
+  
+---  
 ## 삽입 정렬(Insert Sort)
 - 성나영
 ## 병합 정렬(Merge Sort)
