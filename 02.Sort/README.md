@@ -33,13 +33,7 @@ def bubbleSort(arr):
   3) 맨 앞의 위치를 뺀 나머지 데이터를 동일한 방법으로 반복한다.
 
 ### 2. 선택정렬 예시
-예시) [9, 8, 1, 3, 2] 오름차순 정렬
-```
-[9, 8, 1, 3, 2] <br>
-[1, 8, 9, 3, 2] <br>
-[1, 2, 3, 9, 8] <br>
-[1, 2, 3, 8, 9]
-```
+<img src="https://gmlwjd9405.github.io/images/algorithm-selection-sort/selection-sort.png" alt="" width="400" height="550">
   
 ### 3. 선택정렬 코드
 ```
