@@ -7,7 +7,12 @@ Algorithm Study
 - [최대 힙](https://www.acmicpc.net/problem/11279)
 - [완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
 
-정렬 할당부분 준비
+---
+
+- [K번째수](https://programmers.co.kr/learn/courses/30/lessons/42748)
+- [단어 정렬](https://www.acmicpc.net/problem/1181)
+- [빙고](https://www.acmicpc.net/problem/2578)
+- [소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/42839)
 
 ## 리뷰 작성 방식
 1. 코드관련 리뷰는 __Commits__ 에 작성합니다.
