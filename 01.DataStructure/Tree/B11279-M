@@ -1,0 +1,48 @@
+
+from sys import stdin
+
+num =  int(stdin.readline())
+arr = [0]
+for i in range(num):
+    check =  int(stdin.readline())
+    if(check != 0):
+        arr.append(check)
+        index = len(arr) -1
+        while(index != 1):
+            if(arr[index] > arr[(int)(index/2)]):
+                arr[index], arr[(int)(index/2)] = arr[(int)(index/2)], arr[index]
+                index = (int)(index/2) 
+            else:
+                break                 
+        
+        #print(arr)   
+    elif(check == 0):
+         
+        if(len(arr) > 2):
+            print(arr[1])
+            arr[1] = arr.pop()
+            point = 1
+            while(True):
+                if(point*2+1 < len(arr) and arr[point] < arr[point*2+1] and arr[point*2] < arr[point*2+1] ):
+                    arr[point], arr[point*2+1]  = arr[point*2+1] , arr[point]
+                    point = point*2+1
+                elif(point * 2 < len(arr) and arr[point] < arr[point*2]):
+                    arr[point],arr[point*2]  =arr[point*2] ,arr[point]
+                    point *= 2
+                    
+                else:
+                    break
+         
+        elif(len(arr) < 2):
+            print(0)
+            
+        elif(len(arr) == 2):
+            print(arr.pop(1))
+         
+        #print(arr)
+    
+    else: 
+
+        break
+            
+
