@@ -7,7 +7,11 @@ Algorithm Study
 - [단어 정렬](https://www.acmicpc.net/problem/1181)
 - [빙고](https://www.acmicpc.net/problem/2578)
 - [소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/42839)
-
+---
+- [DFS와 BFS](https://www.acmicpc.net/problem/1260)
+- [미로탐색](https://www.acmicpc.net/problem/2178)
+- [토마토](https://www.acmicpc.net/problem/7576)
+---
 ## 리뷰 작성 방식
 1. 코드관련 리뷰는 __Commits__ 에 작성합니다.
 2. 기타 리뷰는 __Conversation__ 에 작성합니다.
