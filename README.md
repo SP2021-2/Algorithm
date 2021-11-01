@@ -3,11 +3,6 @@ Algorithm Study
 
 # 이번주 문제
 ---
-- [K번째수](https://programmers.co.kr/learn/courses/30/lessons/42748)
-- [단어 정렬](https://www.acmicpc.net/problem/1181)
-- [빙고](https://www.acmicpc.net/problem/2578)
-- [소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/42839)
----
 - [DFS와 BFS](https://www.acmicpc.net/problem/1260)
 - [미로탐색](https://www.acmicpc.net/problem/2178)
 - [토마토](https://www.acmicpc.net/problem/7576)
