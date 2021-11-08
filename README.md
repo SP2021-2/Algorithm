@@ -10,7 +10,6 @@ Algorithm Study
 - [거스름돈](https://www.acmicpc.net/problem/14916)
 - [짐 챙기는 숌](https://www.acmicpc.net/problem/1817)
 - [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860)
-- [최소 회의실 개수](https://www.acmicpc.net/problem/19598)
 ```
 import sys
 from collections import deque
