@@ -2,11 +2,6 @@
 Algorithm Study
 
 # 이번주 문제
----
-- [DFS와 BFS](https://www.acmicpc.net/problem/1260)
-- [미로탐색](https://www.acmicpc.net/problem/2178)
-- [토마토](https://www.acmicpc.net/problem/7576)
----
 - [거스름돈](https://www.acmicpc.net/problem/14916)
 - [짐 챙기는 숌](https://www.acmicpc.net/problem/1817)
 - [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860)
