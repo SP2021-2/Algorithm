@@ -5,25 +5,7 @@ Algorithm Study
 - [거스름돈](https://www.acmicpc.net/problem/14916)
 - [짐 챙기는 숌](https://www.acmicpc.net/problem/1817)
 - [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860)
-```
-import sys
-from collections import deque
-N, M = map(int, sys.stdin.readline().split())
 
-def pprint(arr):
-    for line in arr:
-        print(line)
-
-def bfs():
-    mx = [1, 0, -1, 0]
-    my = [0, 1, 0, -1]
-    # 
-    return cnt
-mage = []
-for _ in range(N):
-    mage.append(list(map(int, list(sys.stdin.readline().rstrip()))))
-print(bfs())
-```
 ## 리뷰 작성 방식
 1. 코드관련 리뷰는 __Commits__ 에 작성합니다.
 2. 기타 리뷰는 __Conversation__ 에 작성합니다.
