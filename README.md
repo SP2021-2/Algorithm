@@ -2,11 +2,6 @@
 Algorithm Study
 
 # 이번주 문제
----
-- [거스름돈](https://www.acmicpc.net/problem/14916)
-- [짐 챙기는 숌](https://www.acmicpc.net/problem/1817)
-- [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860)
----
 - [나무 자르기](https://www.acmicpc.net/problem/2805)
 - [수들의 합2](https://www.acmicpc.net/problem/2003)
 - [입국심사](https://programmers.co.kr/learn/courses/30/lessons/43238)
