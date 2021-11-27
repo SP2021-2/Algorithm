@@ -38,8 +38,8 @@ def Dijkstra(Graph, source):
     hq.heappush(queue, (dist[source], source))
     
     while queue:
-        # print(queue)
-        # print(dist)
+        print(queue)
+        print(dist)
         cur_dist, cur_dest = hq.heappop(queue)
         if dist[cur_dest] < cur_dist: # 기존에 있는 거리보다 긴 경우
             continue
