@@ -349,8 +349,87 @@ pp.pprint(D)
 
 
 ## 최소스패닝트리(MST)
+- 그래프 G에 대한 신장트리는 G의 마디를 모두 포함하면서 트리로 연결된 그래프 이다. 이 중 모든 간선의 가중치가 최소가 되는 신장트리를 최소비용 신장트리 즉, 최소 스패닝 트리(MST)라고 한다. 
+- 존재하는 신장트리를 모두 찾아보는 무작정 방법으로 최소 비용 신장트리를 찾으면 최악 시간복잡도가 지수시간보다 나쁘지만, 탐욕적 방법을 사용하면 더 효율적으로 문제를 풀 수 있다. 
+- `부분적으로 최적인 고려사항에 따라 이음선을 선택한다`라고 단순히 말하며, 이 문제를 푸는 2개의 다른 탐욕 알고리즘은 프림 알고리즘과 크루스칼 알고리즘이다.
+### 프림 알고리즘
+: 최소 스패닝 트리를 찾기 위한 탐욕 알고리즘이며, 정점 부분집합에 이웃한 거리들을 판단하며 구한다.
+
+__알고리즘 단계__
+1. 하나의 꼭짓점을 선택하여 이웃한 거리를 구한다.
+2. 가장 최소인 이웃한 거리를 구하고, 정점 부분집합에 이웃한 정점을 추가한다.
+3. 추가한 정점과 이웃한 거리들을 순회하며, 이웃한 거리를 업데이트한다.
+4. 2와 3을 반복하며, 정점 부분집합에 모든 정점이 포함되면 리턴한다.
+
+__소스코드 구현(Python)__
+```
+def pprint(arr):
+    for line in arr:
+        print(line)
+# 5 7
+# 0 1 1
+# 0 2 3
+# 1 2 3
+# 1 3 6
+# 2 3 4
+# 2 4 2
+# 3 4 5
+
+import sys
+
+N, M = map(int, sys.stdin.readline().split(" "))
+W = [[float('inf')]*N for _ in range(N)]
+
+for _ in range(M):
+    i, j, w = map(int, sys.stdin.readline().split(" "))
+    W[i][j] = w
+    W[j][i] = w
+
+for i in range(N):
+    W[i][i] = 0
+
+pprint(W)
+
+def prim(G, source):
+    # init
+    answer = []
+    dist = [G[source][i] for i in range(N)]
+    nearest = [0 for _ in range(N)]
+
+    print(dist)
+    print(nearest)
+    #find min idx
+    
+    while len(answer) < N:
+        min = float('inf')
+        vnear = 0
+        for i in range(1, N):
+            if 0 <= dist[i] < min:
+                min = dist[i]
+                vnear = i
+        if min == float('inf') and vnear == 0:
+            break
+        print(min, vnear)
+        # add answer
+        answer.append((vnear, min))
+        dist[vnear] = -1
+        
+        # renew
+        for i in range(1, N):
+            if G[i][vnear] < dist[i]:
+                dist[i] = G[i][vnear]
+                nearest[i] = vnear
+        print(dist)
+        print(nearest)
+
+    return answer
+print(prim(W, 0))
+```
 
 ### 크루스칼 알고리즘
+: 최소 스패닝 트리를 찾기 위한 탐욕 알고리즘이며, 각 마디마다 자신만 포함하는 V의 서로소 부분집합들을 만드는 걸로 시작하여, 가중치가 작은 간선을 검사하여 생성하는 알고리즘이다.
 
-### 프림 알고리즘
+__알고리즘 단계__
+1. 이음선을 가중치가 작은 것부터 차례로 정렬한다.
+2. 
 
