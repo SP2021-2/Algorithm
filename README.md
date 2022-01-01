@@ -3,17 +3,20 @@ Algorithm Study
 
 # 이번주 문제
 ---
-- [완전 이진 트리](https://www.acmicpc.net/problem/9934)
-- [최대 힙](https://www.acmicpc.net/problem/11279)
-- [완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
-
-정렬 할당부분 준비
-
+- [거스름돈](https://www.acmicpc.net/problem/14916)
+- [짐 챙기는 숌](https://www.acmicpc.net/problem/1817)
+- [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860)
+---
+- [나무 자르기](https://www.acmicpc.net/problem/2805)
+- [수들의 합2](https://www.acmicpc.net/problem/2003)
+= [입국심사](https://programmers.co.kr/learn/courses/30/lessons/43238)
+---
 ## 리뷰 작성 방식
 1. 코드관련 리뷰는 __Commits__ 에 작성합니다.
 2. 기타 리뷰는 __Conversation__ 에 작성합니다.
 2. 모든 문제에 리뷰를 1줄 이상 작성합니다.
 
+[문제링크](https://github.com/tony9402/baekjoon)
 ## PR 방식
 1. git checkout main (메인 브랜치로 이동)
 2. git pull (깃헙 원격 저장소와 업데이트)
